@@ -1,4 +1,4 @@
-public class Questions {
+public class Question {
     private int id;
     private String question;
     private String opt1;
@@ -8,7 +8,15 @@ public class Questions {
     private String answer;
     
     
-    
+    public Question(int id, String question, String opt1, String opt2, String opt3, String opt4, String answer) {
+        this.id = id;
+        this.question = question;
+        this.opt1 = opt1;
+        this.opt2 = opt2;
+        this.opt3 = opt3;
+        this.opt4 = opt4;
+        this.answer = answer;
+    }
     // getters and setters
     public int getId() {
         return id;
@@ -52,6 +60,13 @@ public class Questions {
     public void setAnswer(String answer) {
         this.answer = answer;
     }
+    @Override
+    public String toString() {
+        return "Question [id=" + id + ", question=" + question + ", opt1=" + opt1 + ", opt2=" + opt2 + ", opt3=" + opt3
+                + ", opt4=" + opt4 + ", answer=" + answer + "]";
+    }
 
+    // toString method
+    
     
 }
